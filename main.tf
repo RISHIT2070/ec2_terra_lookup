@@ -54,7 +54,7 @@ locals {
 resource "aws_instance" "Infrasity" {
   for_each = { for idx, name in local.instance_names : idx => name }
 
-  ami           = "ami-0c55b159cbfafe1f0"
+  ami           = "ami-0ec0e125bb6c6e8ec"
   instance_type = local.instance_type
 
   tags = {
